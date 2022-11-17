@@ -3,6 +3,7 @@ package com.prueba.prueba.web;
 
 import com.prueba.prueba.modelo.Persona;
 import com.prueba.prueba.servicio.PersonaServicio;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,6 +26,7 @@ public class PersonaControlador {
     }
 
     @GetMapping("/todo")
+    @ApiOperation("Obtiene Todos los registros de Personas")
     public List<Persona> obtenerTodo(){
         return personaServicio.obtenerTodo();
     }

@@ -61,12 +61,12 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>prod</id>
+			<id>pro</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<spring.profiles.active>prod</spring.profiles.active>
+				<spring.profiles.active>pro</spring.profiles.active>
 			</properties>
 		</profile>
 		<profile>

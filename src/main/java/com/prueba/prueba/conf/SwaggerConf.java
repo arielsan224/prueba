@@ -13,8 +13,7 @@ public class SwaggerConf {
     public Docket api() {
         return new Docket(DocumentationType.OAS_30)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.prueba.prueba"))
-                .paths(PathSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.prueba.prueba.web"))
                 .build();
     }
 

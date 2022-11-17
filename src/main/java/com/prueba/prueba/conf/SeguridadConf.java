@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
-@Configuration
+//@Configuration
 @EnableWebSecurity
 public class SeguridadConf {
 
@@ -33,7 +33,6 @@ public class SeguridadConf {
                 .disable()
                 .authorizeRequests()
                 .antMatchers("/personas/**")
-                //.antMatchers("/api/**")
                 .authenticated()
                 .and()
                 .httpBasic(Customizer.withDefaults())
